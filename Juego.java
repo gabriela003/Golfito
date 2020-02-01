@@ -21,16 +21,9 @@ public class Juego extends InterfaceJuego
 	private BarraDeFuerza barraDeFuerza;
 	private Puntaje puntaje;
 	
-	// Variables y métodos propios de cada grupo
-	// ...
-	
 	Juego()
 	{
-		// Inicializa el objeto entorno
-		this.entorno = new Entorno(this, "Golfito 100% real NO FAKE FULL HD/BD 4K [PARCHEADO] --> Krsteff Monzon Crevatin - V0.01", 1000, 600);
-		
-		// Inicializar lo que haga falta para el juego
-		// ...
+		this.entorno = new Entorno(this, "Golfito- V0.01", 1000, 600);
 		
 		this.fondo = Herramientas.cargarImagen("FondoJuego.jpg");
 		
@@ -56,16 +49,12 @@ public class Juego extends InterfaceJuego
 		
 		this.puntaje = new Puntaje ();
 		
-
-		// Inicia el juego!
 		this.entorno.iniciar();
 	}
 
 	/**
 	 * Durante el juego, el método tick() será ejecutado en cada instante y 
-	 * por lo tanto es el método más importante de esta clase. Aquí se debe 
-	 * actualizar el estado interno del juego para simular el paso del tiempo 
-	 * (ver el enunciado del TP para mayor detalle).
+	 * por lo tanto es el método más importante de esta clase.
 	 */
 	public void tick()
 	{
@@ -136,8 +125,6 @@ public class Juego extends InterfaceJuego
 			
 		}
 		
-		// Procesamiento de un instante de tiempo
-		// ...
 	}
 	
 	@SuppressWarnings("unused")
